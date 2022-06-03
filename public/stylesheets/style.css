@@ -57,7 +57,7 @@ body{
   margin-right: 15px;
 }
 .container .navbar .right .language option{
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.502);
 }
 .container .navbar .right button{
   margin: auto;
