@@ -1,11 +1,18 @@
 <div class="login">
     <section class="contact" id="login">
         <div class="row">
-            <form action="">
-                <input type="email" class="box" placeholder="email">
-                <input type="password" class="box" placeholder="password">
-                <input type="submit" value="login" class="btn">
-            </form>
+            {{#if user}}
+                <form action="/login">
+                    <h2>Hi {{user}}</h2>
+                    <input type="submit" value="logout" class="btn">
+                </form>
+            {{else}}
+                <form action="/login/user" method="post">
+                    <input type="text" class="box" placeholder="username" name="username">
+                    <input type="password" class="box" placeholder="password" name="password">
+                    <input type="submit" value="login" class="btn">
+                </form>
+            {{/if}}
         </div>
     </section>
 </div>
