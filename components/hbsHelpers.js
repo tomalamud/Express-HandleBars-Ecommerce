@@ -29,6 +29,9 @@ var helper = {
     },
     shortText: (text, n) => {
         return text.substring(0, n-1);
+    },
+    if_cookie: () => {
+        console.log("hola cookie")
     }
 };
 
